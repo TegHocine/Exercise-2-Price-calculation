@@ -1,0 +1,12 @@
+.Title {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.Title > span {
+  display: flex;
+}
+.title_icon {
+  margin-inline: 0.5rem;
+  height: 2rem;
+}

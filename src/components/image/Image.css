@@ -1,0 +1,11 @@
+.Image {
+  max-width: 6rem;
+}
+
+.roundedImg {
+  border: 1px solid gray;
+  border-radius: 99999px;
+  height: 4.5rem;
+  width: 4.5rem;
+  object-fit: contain;
+}

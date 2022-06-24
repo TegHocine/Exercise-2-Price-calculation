@@ -1,0 +1,18 @@
+.Price {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-block: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.old-price > p {
+  text-decoration: line-through;
+  color: rgb(165, 11, 11);
+}
+
+.price_title {
+  color: rgba(53, 66, 89, 0.877);
+}

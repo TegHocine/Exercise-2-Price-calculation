@@ -1,0 +1,9 @@
+.Rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.rating_icon {
+  width: 1rem;
+}
