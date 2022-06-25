@@ -27,6 +27,9 @@ export const cartSlice = createSlice({
             { ...action.payload, productQty: 1 }
           ])
 
+      // addToCart can increment the product quantity  if the product already exist in the cart
+      // so i added this check to make sure the offers work
+      // i have explaned this in @increment and @decrement reducer below
       if (
         productIndex >= 0 &&
         state.cartItems[productIndex]?.product_id === 2 &&
@@ -50,7 +53,7 @@ export const cartSlice = createSlice({
       // check if the product exist if it does increment the quantity
       productIndex >= 0 && (state.cartItems[productIndex].productQty += 1)
 
-      // Added this here bcs this is simplest way i found to implement this offer
+      // Added this here bcs this is the simplest way i've found to implement this offer
       // So for the milk offer buy 3 get the 4th for free
       // when incrementing, i simple check the product_id of milk wich is 2
       // and if the quantity mod 4 is equaly to 0 if its true
